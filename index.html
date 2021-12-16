@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Document</title>
+    </head>
+
+    <body bgcolor="#F0F8FF">
+        <form action="login.aspx" name="LogiinUsuario" method="post">
+            <fieldset>
+                <legend><h2>LOGIN</h2></legend>
+                <div id="username" class="fild">
+                    <label for="uname">Usuário:</label>
+                    <input type="text" name="username" id="uname" placeholder="Digite seu nome de usuário">
+                </div>
+
+                <div id="password" class="fild">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" id="pwd" name="password" placeholder="Digite sua senha">
+                </div>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <form>
+            <fieldset>
+                <legend><h2>FORMULÁRIO</h2></legend>
+                <div>
+                    <label for="dnasc"><b>Data de Nascimento: </b></label>
+                    <input type="date" id="dnasc" name="dnasc "><br><br>
+                </div>
+                <div>
+                    <label for="tempo"><b>Tempo de Residência: </b></label>
+                    <input type="number" id="filhos" name="filhos" min="0" max="10"><br><br>
+                </div>
+                <div>
+                    <label for="filhos"><b>Número de filhos: </b></label>
+                    <input type="number" id="filhos" name="filhos" min="0" max="10"><br><br>
+                </div>
+                <div>
+                    <label for="cor"><b>Cor preferida: </b></label>
+                    <input type="color" name="cor" id="cor"><br><br>
+                </div>
+            </fieldset>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>Validadores</h2>
+        <p>Os validadores são usados extensivamente por componentes de FORMULÁRIOS que necessitam de tratamento especial antes de serem submetidos</p>
+        <p><b>mesmo que o FORMULÁRIO esteja sendo enviado para um recurso externo, o envio propriamente dito é bloqueado por conta dos validadores!!</b></p>
+    
+        <ul>
+            <li>Requerid e Maxlength</li>
+        </ul>
+        <input type="text" name="nome" id="nome" required="required" maxlength="20">
+    
+        <ul>
+            <li>Email</li>
+        </ul>
+    
+        <input type="email" id="email" nome="email">
+    
+        <ul>
+            <li>
+                O atributo <b>pattern</b> permite que o valor do campo seja fornecido em conformidade com a expressão REGULAR. No exemplo a seguir, uma placa de carro deve ser fornecida com 3 digitos alfabeticos e 4 numericos. Se o valor fornecido não corresponder
+                a este padrão, a validação falha.
+            </li>
+        </ul>
+    
+        <label for="placa">Placa de veiculo:</label>
+        <input type="text" id="placa" name="placa" pattern="[a-zA-Z]{3}[0-9]{4}">
+    
+    </body>
+</html>
